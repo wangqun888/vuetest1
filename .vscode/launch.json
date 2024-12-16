@@ -1,0 +1,30 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+
+      {
+          "type": "chrome",
+          "request": "launch",
+          "name": "针对 localhost 启动 Chrome",
+        //   "breakOnLoad": true,
+          "url": "http://localhost:8080",
+          "webRoot": "${workspaceFolder}",
+          "skipFiles": [
+              "<node_internals>/**/*.js", //跳过node核心模块代码
+              "${workspaceFolder}/node_modules/**",
+              "${workspaceFolder}/node_modules/**/*.js",
+              "${workspaceFolder}/src/node_modules/**/*.js",
+              "${workspaceFolder}/src/asserts/js/webpack:/app/webpack/**", //忽略webpack源码
+              "${workspaceFolder}/src/asserts/js/webpack:/app/node_modules/**" //忽略各种包文件源码
+          ],
+          "sourceMapPathOverrides": { //指定生成的sourceMap途径，参看浏览器生成的 .目录和src目录
+          "webpack:///src/*": "${webRoot}/*",
+          "webpack:///./src/*": "${webRoot}/*"
+      }
+      }
+  ]
+}

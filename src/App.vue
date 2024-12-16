@@ -21,7 +21,6 @@ console.log(logo.value);
 // console.info('信息'); // 信息提示
 // console.error('错误'); // 错误信息
 // console.warn('警告'); // 警告信息
-
 // const foo = { id: 1, verified: true, color: 'green' };
 // const bar = { id: 2, verified: false, color: 'red' };
 // console.table({ foo, bar }); // 通过表格的形式进行展示

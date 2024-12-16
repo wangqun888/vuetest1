@@ -29,12 +29,4 @@ console.log(logo.value);
 
 <style>
 @import "./css/index.css";
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #4492e1;
-  margin-top: 60px;
-} */
 </style>
